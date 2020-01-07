@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Progress Bar For File Upload</title>
+        <link rel='stylesheet' href='styles.css'>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+
+    <body>
+        <h1>AJAX FILE UPLOAD WITH PROGRESS BAR</h1>
+        <form class="form" id="uploadForm">
+        <div class="file-upload">
+            <div class="image-upload-wrap">
+              <input class="file-upload-input" type='file' accept="image/*" name="inpFile[]" id="inpFile" multiple/>
+              <div class="drag-text">
+                <h3>Drag and drop Images</h3>
+              </div>
+            </div>
+            <div class="file-upload-content">
+                <div class="uploaded-images">
+                </div>
+              <div class="image-title-wrap">
+                <button type="button" class="remove-image">Remove Uploaded Images</button>
+              </div>
+            </div>
+          </div>
+          <br>
+          <input class='upload-image' type="submit" value="Upload">
+          <p id="ajax-response"></p>
+        </form>
+        <div class='progress-bar' id="progressBar" style="display:none;">
+            <div class="progress-bar-fill">
+                <span class="progress-bar-text">0%</span>
+            </div>
+        </div>
+        <script src='scripts.js'></script>
+    </body>
+</html>
